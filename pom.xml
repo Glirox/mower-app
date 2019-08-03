@@ -35,4 +35,23 @@
 		</dependency>
 	</dependencies>
 
+	<build>
+		<finalName>mower-app</finalName>
+		<!-- Main class to execute the jar -->
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.1.1</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>com.blablacar.test.mowerapp.EntryPoint</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
 </project>
